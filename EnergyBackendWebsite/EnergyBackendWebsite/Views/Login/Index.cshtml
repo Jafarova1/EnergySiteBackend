@@ -1,0 +1,59 @@
+﻿@model LoginVM
+@{
+    ViewData["Title"] = "Login";
+}
+@section Styles {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="~/./css/sign.css">
+}
+<main>
+    <section id="wrapper-login">
+        <img style="width:100%" class="product-image" src="~/./images/signImage.jpg" alt="">
+        <div class="container page_text">
+            <h1>
+                Log in to your account
+            </h1>
+            <ul>
+                <li>
+                    <a asp-controller="Home" asp-action="Index">
+                        Home
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                </li>
+                <li><span>Login</span></li>
+            </ul>
+        </div>
+    </section>
+    <section id="login">
+        <div class="text-danger" asp-validation-summary="All"></div>
+        <form class="form-login" method="post" asp-action="Login">
+            <div class="form-login-wrap">
+                <h2 class="login-form-title">Login</h2>
+                <label for="username">Username or email address<span class="required">*</span></label>
+                <input type="text" class="input-text" type="text" asp-for="EmailOrUsername">
+                <span class="text-danger" asp-validation-for="EmailOrUsername"></span>
+                <label for="password">Password<span class="required">*</span></label>
+                <div class="area-password">
+                    <input type="password" class="password" asp-for="Password"><i class="fa-regular fa-eye eyes"></i>
+                    <span class="text-danger" asp-validation-for="Password"></span>
+                </div>
+                <button type="submit">Log in</button>
+
+                <div class="login-bottom">
+                    <input type="checkbox" id="remember_me" asp-for="IsRememberMe"><span>Remember me</span>
+                    <p><a asp-controller="Account" asp-action="ForgotPassword">Lost your password?</a></p>
+                    <div class="register-half-bg" style="position: absolute;right: 0px;top: 18px;"> <h4>Dont't have an account?</h4><a asp-controller="Account" asp-action="Register">Register</a></div>
+                </div>
+
+            </div>
+        </form>
+    </section>
+
+</main>
+
+
+@section Scripts{
+  @*  <script src="~/./js/sign.js"></script>
+    <script src="~/./js/cart.js"></script>*@
+    <partial name="_ValidationScriptsPartial"/>
+}
