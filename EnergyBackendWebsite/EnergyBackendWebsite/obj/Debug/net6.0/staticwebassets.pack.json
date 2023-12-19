@@ -5,6 +5,270 @@
       "PackagePath": "staticwebassets\\EnergyBackendWebsite.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\css\\main.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\css\\maps\\style.css.map",
+      "PackagePath": "staticwebassets\\Admin\\css\\maps\\style.css.map"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\css\\style.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\img\\avatars\\rrr.jfif",
+      "PackagePath": "staticwebassets\\Admin\\img\\avatars\\rrr.jfif"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\img\\favicon\\favicon.ico",
+      "PackagePath": "staticwebassets\\Admin\\img\\favicon\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\img\\icons\\brands\\asana.png",
+      "PackagePath": "staticwebassets\\Admin\\img\\icons\\brands\\asana.png"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\img\\icons\\brands\\behance.png",
+      "PackagePath": "staticwebassets\\Admin\\img\\icons\\brands\\behance.png"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\img\\icons\\brands\\dribbble.png",
+      "PackagePath": "staticwebassets\\Admin\\img\\icons\\brands\\dribbble.png"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\img\\icons\\brands\\facebook.png",
+      "PackagePath": "staticwebassets\\Admin\\img\\icons\\brands\\facebook.png"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\img\\icons\\brands\\github.png",
+      "PackagePath": "staticwebassets\\Admin\\img\\icons\\brands\\github.png"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\img\\icons\\brands\\google.png",
+      "PackagePath": "staticwebassets\\Admin\\img\\icons\\brands\\google.png"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\img\\icons\\brands\\instagram.png",
+      "PackagePath": "staticwebassets\\Admin\\img\\icons\\brands\\instagram.png"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\img\\icons\\brands\\mailchimp.png",
+      "PackagePath": "staticwebassets\\Admin\\img\\icons\\brands\\mailchimp.png"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\img\\icons\\brands\\slack.png",
+      "PackagePath": "staticwebassets\\Admin\\img\\icons\\brands\\slack.png"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\img\\icons\\brands\\twitter.png",
+      "PackagePath": "staticwebassets\\Admin\\img\\icons\\brands\\twitter.png"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\img\\icons\\unicons\\cc-primary.png",
+      "PackagePath": "staticwebassets\\Admin\\img\\icons\\unicons\\cc-primary.png"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\img\\icons\\unicons\\cc-success.png",
+      "PackagePath": "staticwebassets\\Admin\\img\\icons\\unicons\\cc-success.png"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\img\\icons\\unicons\\cc-warning.png",
+      "PackagePath": "staticwebassets\\Admin\\img\\icons\\unicons\\cc-warning.png"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\img\\icons\\unicons\\chart-success.png",
+      "PackagePath": "staticwebassets\\Admin\\img\\icons\\unicons\\chart-success.png"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\img\\icons\\unicons\\chart.png",
+      "PackagePath": "staticwebassets\\Admin\\img\\icons\\unicons\\chart.png"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\img\\icons\\unicons\\paypal.png",
+      "PackagePath": "staticwebassets\\Admin\\img\\icons\\unicons\\paypal.png"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\img\\icons\\unicons\\wallet-info.png",
+      "PackagePath": "staticwebassets\\Admin\\img\\icons\\unicons\\wallet-info.png"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\img\\icons\\unicons\\wallet.png",
+      "PackagePath": "staticwebassets\\Admin\\img\\icons\\unicons\\wallet.png"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\img\\illustrations\\girl-doing-yoga-light.png",
+      "PackagePath": "staticwebassets\\Admin\\img\\illustrations\\girl-doing-yoga-light.png"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\img\\illustrations\\man-with-laptop-light.png",
+      "PackagePath": "staticwebassets\\Admin\\img\\illustrations\\man-with-laptop-light.png"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\img\\illustrations\\page-misc-error-light.png",
+      "PackagePath": "staticwebassets\\Admin\\img\\illustrations\\page-misc-error-light.png"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\img\\layouts\\layout-container-light.png",
+      "PackagePath": "staticwebassets\\Admin\\img\\layouts\\layout-container-light.png"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\img\\layouts\\layout-fluid-light.png",
+      "PackagePath": "staticwebassets\\Admin\\img\\layouts\\layout-fluid-light.png"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\img\\layouts\\layout-without-menu-light.png",
+      "PackagePath": "staticwebassets\\Admin\\img\\layouts\\layout-without-menu-light.png"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\img\\layouts\\layout-without-navbar-light.png",
+      "PackagePath": "staticwebassets\\Admin\\img\\layouts\\layout-without-navbar-light.png"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\js\\admin.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\admin.js"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\js\\config.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\config.js"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\js\\dashboards-analytics.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\dashboards-analytics.js"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\js\\extended-ui-perfect-scrollbar.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\extended-ui-perfect-scrollbar.js"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\js\\form-basic-inputs.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\form-basic-inputs.js"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\js\\index.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\index.js"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\js\\main.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\js\\pages-account-settings-account.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\pages-account-settings-account.js"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\js\\ui-modals.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\ui-modals.js"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\js\\ui-popover.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\ui-popover.js"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\js\\ui-toasts.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\ui-toasts.js"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\vendor\\css\\core.css",
+      "PackagePath": "staticwebassets\\Admin\\vendor\\css\\core.css"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\vendor\\css\\pages\\page-account-settings.css",
+      "PackagePath": "staticwebassets\\Admin\\vendor\\css\\pages\\page-account-settings.css"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\vendor\\css\\pages\\page-auth.css",
+      "PackagePath": "staticwebassets\\Admin\\vendor\\css\\pages\\page-auth.css"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\vendor\\css\\pages\\page-icons.css",
+      "PackagePath": "staticwebassets\\Admin\\vendor\\css\\pages\\page-icons.css"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\vendor\\css\\pages\\page-misc.css",
+      "PackagePath": "staticwebassets\\Admin\\vendor\\css\\pages\\page-misc.css"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\vendor\\css\\theme-default.css",
+      "PackagePath": "staticwebassets\\Admin\\vendor\\css\\theme-default.css"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\vendor\\fonts\\boxicons.css",
+      "PackagePath": "staticwebassets\\Admin\\vendor\\fonts\\boxicons.css"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\vendor\\fonts\\boxicons\\boxicons.eot",
+      "PackagePath": "staticwebassets\\Admin\\vendor\\fonts\\boxicons\\boxicons.eot"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\vendor\\fonts\\boxicons\\boxicons.svg",
+      "PackagePath": "staticwebassets\\Admin\\vendor\\fonts\\boxicons\\boxicons.svg"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\vendor\\fonts\\boxicons\\boxicons.ttf",
+      "PackagePath": "staticwebassets\\Admin\\vendor\\fonts\\boxicons\\boxicons.ttf"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\vendor\\fonts\\boxicons\\boxicons.woff",
+      "PackagePath": "staticwebassets\\Admin\\vendor\\fonts\\boxicons\\boxicons.woff"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\vendor\\fonts\\boxicons\\boxicons.woff2",
+      "PackagePath": "staticwebassets\\Admin\\vendor\\fonts\\boxicons\\boxicons.woff2"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\vendor\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\Admin\\vendor\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\vendor\\js\\helpers.js",
+      "PackagePath": "staticwebassets\\Admin\\vendor\\js\\helpers.js"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\vendor\\js\\menu.js",
+      "PackagePath": "staticwebassets\\Admin\\vendor\\js\\menu.js"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\vendor\\libs\\apex-charts\\apex-charts.css",
+      "PackagePath": "staticwebassets\\Admin\\vendor\\libs\\apex-charts\\apex-charts.css"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\vendor\\libs\\apex-charts\\apexcharts.js",
+      "PackagePath": "staticwebassets\\Admin\\vendor\\libs\\apex-charts\\apexcharts.js"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\vendor\\libs\\highlight\\highlight-github.css",
+      "PackagePath": "staticwebassets\\Admin\\vendor\\libs\\highlight\\highlight-github.css"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\vendor\\libs\\highlight\\highlight.css",
+      "PackagePath": "staticwebassets\\Admin\\vendor\\libs\\highlight\\highlight.css"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\vendor\\libs\\highlight\\highlight.js",
+      "PackagePath": "staticwebassets\\Admin\\vendor\\libs\\highlight\\highlight.js"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\vendor\\libs\\jquery\\jquery.js",
+      "PackagePath": "staticwebassets\\Admin\\vendor\\libs\\jquery\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\vendor\\libs\\masonry\\masonry.js",
+      "PackagePath": "staticwebassets\\Admin\\vendor\\libs\\masonry\\masonry.js"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.css",
+      "PackagePath": "staticwebassets\\Admin\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.css"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.js",
+      "PackagePath": "staticwebassets\\Admin\\vendor\\libs\\perfect-scrollbar\\perfect-scrollbar.js"
+    },
+    {
+      "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\Admin\\vendor\\libs\\popper\\popper.js",
+      "PackagePath": "staticwebassets\\Admin\\vendor\\libs\\popper\\popper.js"
+    },
+    {
       "Id": "C:\\Users\\GULTAJ\\OneDrive\\Desktop\\EnergyBackendWebsite\\EnergyBackendWebsite\\EnergyBackendWebsite\\wwwroot\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },

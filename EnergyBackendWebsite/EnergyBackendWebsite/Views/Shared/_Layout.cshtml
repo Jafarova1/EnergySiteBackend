@@ -102,9 +102,10 @@
                     </div>
                 </div>
                 <a asp-controller="Contact" asp-action="Index" class="nav-item nav-link">Contact</a>
-                <a asp-controller="Login" asp-action="Index" class="nav-item nav-link">Login</a>
-                <a asp-controller="Register" asp-action="Index" class="nav-item nav-link">Register</a>
+             @*   <a asp-controller="Login" asp-action="Index" class="nav-item nav-link">Login</a>
+                <a asp-controller="Register" asp-action="Index" class="nav-item nav-link">Register</a>*@
                 <a asp-controller="Energy" asp-action="Index" class="nav-item nav-link">Energy</a>
+
 
                 @if (User.Identity.IsAuthenticated)
                 {
@@ -128,6 +129,8 @@
                     <li><a asp-controller="Account" asp-action="Login">Login</a></li>
                     <li><a asp-controller="Account" asp-action="Register">Register</a></li>
                 }
+
+
 
             </div>
          

@@ -9,7 +9,7 @@ using EnergyBackendWebsite.Helpers;
 
 namespace EnergyBackendWebsite.Services
 {
-    public class EmailService 
+    public class EmailService :IEmailService
     {
 
         private readonly EmailSettings _emailSettings;
