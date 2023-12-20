@@ -9,6 +9,5 @@ namespace EnergyBackendWebsite.ViewModels.Account
         [Required]
         [DataType(DataType.Password)]
         public string Password { get; set; }
-        public bool IsRememberMe { get; set; }
     }
 }

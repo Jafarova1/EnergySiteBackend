@@ -4,19 +4,18 @@ namespace EnergyBackendWebsite.ViewModels
 {
     public class RegisterVM
     {
-        [Required]
-        public string FirstName { get; set; }
-        [Required]
-        public string LastName { get; set; }
-        [Required]
-        [DataType(DataType.EmailAddress, ErrorMessage = "E-mail is not valid")]
+        [Required(ErrorMessage = "The full name is required")]
+        public string FullName { get; set; }
+        [Required(ErrorMessage = "The username is required")]
+        public string Username { get; set; }
+        [Required(ErrorMessage = "The email address is required")]
+        [EmailAddress(ErrorMessage = "Invalid Email Address")]
         public string Email { get; set; }
-        [Required]
+        [Required(ErrorMessage = "The password is required")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
-        [Required]
+        [Required(ErrorMessage = "The repeat password is required")]
         [DataType(DataType.Password), Compare(nameof(Password))]
-        public string ConfirmPassword { get; set; }
-        public List<string> ErrorMessages { get; set; } = new List<string>();
+        public string RepeatPassword { get; set; }
     }
 }

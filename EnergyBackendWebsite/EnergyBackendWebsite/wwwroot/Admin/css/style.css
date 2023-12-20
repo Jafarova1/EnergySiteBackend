@@ -10025,6 +10025,11 @@ pre code {
   border-color: #a2bfff;
 }
 
+.active-paginate {
+    background-color: #12b65f !important;
+    color: white !important;
+}
+
 .table-hover .table-primary:hover {
   background-color: #b4caff;
 }

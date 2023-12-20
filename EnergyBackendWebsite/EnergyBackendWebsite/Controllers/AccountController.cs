@@ -14,93 +14,78 @@ namespace EnergyBackendWebsite.Controllers
 {
     public class AccountController : Controller
     {
-      
-          private readonly AppDbContext _context;
+
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly IEmailService _emailService;
- 
 
-        public AccountController(AppDbContext context,
-                                 UserManager<AppUser> userManager,
+        public AccountController(UserManager<AppUser> userManager,
                                  SignInManager<AppUser> signInManager,
-                                 RoleManager<IdentityRole> roleManager,
-                                   IEmailService emailService
-                                
-                                 )
+                                 IEmailService emailService,
+                                 RoleManager<IdentityRole> roleManager)
         {
-            _context = context;
             _userManager = userManager;
             _signInManager = signInManager;
-            _roleManager = roleManager;
             _emailService = emailService;
-
-
+            _roleManager = roleManager;
         }
+
         [HttpGet]
-        public IActionResult Register()
+        public IActionResult SignUp()
         {
             return View();
         }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Register(RegisterVM model)
+        public async Task<IActionResult> SignUp(RegisterVM request)
         {
-            try
+            if (!ModelState.IsValid)
             {
-                if (!ModelState.IsValid)
-                {
-                    return View(model);
-                }
-
-                AppUser newUser = new()
-                {
-                    UserName = string.Join("_", model.FirstName, model.LastName),
-                    Email = model.Email,
-                    LastName = model.LastName,
-                    FirstName = model.FirstName,
-                };
-
-                IdentityResult result = await _userManager.CreateAsync(newUser, model.Password);
-
-                if (!result.Succeeded)
-                {
-                    foreach (var item in result.Errors)
-                    {
-                        ModelState.AddModelError(string.Empty, item.Description);
-                    }
-                    TempData["errors"] = model.ErrorMessages;
-                    return View(model);
-                }
-
-                await _userManager.AddToRoleAsync(newUser, Roles.SuperAdmin.ToString());
-
-                string token = await _userManager.GenerateEmailConfirmationTokenAsync(newUser);
-
-                string link = Url.Action(nameof(ConfirmEmail), "Account", new { userId = newUser.Id, token }, Request.Scheme, Request.Host.ToString());
-
-                string subject = "Register confirmation";
-
-                string html = string.Empty;
-
-                using (StreamReader reader = new StreamReader("wwwroot/templates/verify.html"))
-                {
-                    html = reader.ReadToEnd();
-                }
-
-                html = html.Replace("{{link}}", link);
-                html = html.Replace("{{headerText}}", "Welcome to SweetBites");
-
-                _emailService.Send(newUser.Email, subject, html);
-
-                return RedirectToAction(nameof(VerifyEmail));
+                return View(request);
             }
-            catch (Exception ex)
+
+            AppUser user = new()
             {
-                ViewBag.error = ex.Message;
-                return View(model);
+                UserName = request.Username,
+                FullName = request.FullName,
+                Email = request.Email,
+            };
+
+            var result = await _userManager.CreateAsync(user, request.Password);
+
+            if (!result.Succeeded)
+            {
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError(string.Empty, error.Description);
+                }
+                return View(request);
             }
+
+            await _userManager.AddToRoleAsync(user, Roles.Member.ToString());
+
+            string token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+
+            string link = Url.Action(nameof(ConfirmEmail), "Account", new { userId = user.Id, token }, Request.Scheme);
+
+            string html = string.Empty;
+
+            using (StreamReader reader = new("wwwroot/templates/account.html"))
+            {
+                html = reader.ReadToEnd();
+            }
+
+            html = html.Replace("{{link}}", link);
+
+            html = html.Replace("{{fullName}}", user.FullName);
+
+            string subject = "Email confirmation";
+
+            _emailService.Send(user.Email, subject, html);
+
+            return RedirectToAction(nameof(VerifyEmail));
         }
 
         public async Task<IActionResult> ConfirmEmail(string userId, string token)
@@ -109,8 +94,6 @@ namespace EnergyBackendWebsite.Controllers
 
             AppUser user = await _userManager.FindByIdAsync(userId);
 
-            if (user == null) return NotFound();
-
             await _userManager.ConfirmEmailAsync(user, token);
 
             await _signInManager.SignInAsync(user, false);
@@ -118,136 +101,76 @@ namespace EnergyBackendWebsite.Controllers
             return RedirectToAction("Index", "Home");
         }
 
-        public IActionResult VerifyEmail(string email)
-        {
-            ConfirmAccountVM confirmAccount = new ConfirmAccountVM()
-            {
-                Email = email
-            };
-
-            return View(confirmAccount);
-        }
-        [HttpGet]
-        public IActionResult Login()
+        public IActionResult VerifyEmail()
         {
             return View();
         }
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login(LoginVM model)
+
+        [HttpGet]
+        public IActionResult SignIn()
         {
-            try
-            {
-                if (!ModelState.IsValid)
-                {
-                    return View(model);
-                }
-
-                AppUser user = await _userManager.FindByEmailAsync(model.EmailOrUsername);
-
-                if (user == null)
-                {
-                    user = await _userManager.FindByNameAsync(model.EmailOrUsername);
-                }
-                if (user == null)
-                {
-                    ModelState.AddModelError(string.Empty, "Email or password is wrong");
-                    return View(model);
-                }
-                var res = await _signInManager.PasswordSignInAsync(user, model.Password, model.IsRememberMe, false);
-
-                if (!res.Succeeded)
-                {
-                    ModelState.AddModelError(string.Empty, "Email or password is wrong");
-                    return View(model);
-                }
-
-                return RedirectToAction("Index", "Home");
-
-
-            }
-            catch (Exception ex)
-            {
-                ViewBag.error = ex.Message;
-                return View();
-            }
+            return View();
         }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Logout(string userId)
+        public async Task<IActionResult> SignIn(LoginVM request)
         {
-            await _signInManager.SignOutAsync();
+            if (!ModelState.IsValid)
+            {
+                return View(request);
+            }
 
-    
+            AppUser user = await _userManager.FindByEmailAsync(request.EmailOrUsername);
 
+            if (user == null)
+            {
+                user = await _userManager.FindByNameAsync(request.EmailOrUsername);
+            }
+
+            if (user == null)
+            {
+                ModelState.AddModelError(string.Empty, "Email or password wrong");
+                return View(request);
+            }
+
+            PasswordVerificationResult comparePassword = _userManager.PasswordHasher.VerifyHashedPassword(user, user.PasswordHash, request.Password);
+
+            if (comparePassword.ToString() == "Failed")
+            {
+                ModelState.AddModelError(string.Empty, "Email or password wrong");
+                return View(request);
+            }
+
+            var result = await _signInManager.PasswordSignInAsync(user, request.Password, false, false);
+
+            if (result.IsNotAllowed)
+            {
+                ModelState.AddModelError(string.Empty, "Please confirm your account");
+                return View(request);
+            }
 
             return RedirectToAction("Index", "Home");
-
         }
 
         [HttpGet]
-        public IActionResult ForgotPassword()
+        public async Task<IActionResult> Logout()
         {
-            return View();
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Home");
         }
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> ForgotPassword(ForgotPasswordVM forgotPassword)
+
+        public async Task<IActionResult> CreateRoles()
         {
-            //if (!ModelState.IsValid) return View();
-
-            AppUser existUser = await _userManager.FindByEmailAsync(forgotPassword.Email);
-
-            if (existUser is null)
+            foreach (var role in Enum.GetValues(typeof(Roles)))
             {
-                ModelState.AddModelError("Email", "User not found");
-                return View();
+                if (!await _roleManager.RoleExistsAsync(role.ToString()))
+                {
+                    await _roleManager.CreateAsync(new IdentityRole { Name = role.ToString() });
+                }
             }
 
-            string token = await _userManager.GeneratePasswordResetTokenAsync(existUser);
-
-            string link = Url.Action(nameof(ResetPassword), "Account", new { userId = existUser.Id, token }, Request.Scheme, Request.Host.ToString());
-
-
-
-            string html = string.Empty;
-
-            using (StreamReader reader = new StreamReader("wwwroot/templates/verify.html"))
-            {
-                html = reader.ReadToEnd();
-            }
-
-            html = html.Replace("{{link}}", link);
-            html = html.Replace("{{headerText}}", "Welcome to SweetBites");
-
-
-            string subject = "Verify password reset email";
-
-
-
-            _emailService.Send(existUser.Email, subject, html);
-            await _signInManager.SignInAsync(existUser, false);
-            return RedirectToAction(nameof(VerifyEmail));
-        }
-        [HttpGet]
-        public IActionResult ResetPassword(string userId, string token)
-        {
-            return View(new ResetPasswordVM { Token = token, UserId = userId });
-        }
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> ResetPassword(ResetPasswordVM resetPassword)
-        {
-            if (!ModelState.IsValid) return View(resetPassword);
-            AppUser existUser = await _userManager.FindByIdAsync(resetPassword.UserId);
-            if (existUser == null) return NotFound();
-            if (await _userManager.CheckPasswordAsync(existUser, resetPassword.Password))
-            {
-                ModelState.AddModelError("", "New password cant be same with old password");
-                return View(resetPassword);
-            }
-            await _userManager.ResetPasswordAsync(existUser, resetPassword.Token, resetPassword.Password);
-            return RedirectToAction(nameof(Login));
+            return Ok();
         }
     }
     }

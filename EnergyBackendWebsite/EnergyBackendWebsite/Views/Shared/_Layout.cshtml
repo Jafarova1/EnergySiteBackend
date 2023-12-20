@@ -106,7 +106,7 @@
                 <a asp-controller="Register" asp-action="Index" class="nav-item nav-link">Register</a>*@
                 <a asp-controller="Energy" asp-action="Index" class="nav-item nav-link">Energy</a>
 
-
+@*
                 @if (User.Identity.IsAuthenticated)
                 {
                     <form asp-controller="Account" asp-action="Logout" asp-route-userId="@userManager.Users.Where(u=>u.UserName==User.Identity.Name).FirstOrDefault().Id" method="post">
@@ -129,7 +129,17 @@
                     <li><a asp-controller="Account" asp-action="Login">Login</a></li>
                     <li><a asp-controller="Account" asp-action="Register">Register</a></li>
                 }
-
+*@
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <li class=""><a class="px-1" href="">@Model.UserFullName</a></li>
+                    <li class=""><a class="px-1" asp-controller="Account" asp-action="Logout">Logout</a></li>
+                }
+                else
+                {
+                    <li class=""><a class="px-1" asp-controller="Account" asp-action="SignIn">Login</a></li>
+                    <li class=""><a class="px-1" asp-controller="Account" asp-action="SignUp">Register</a></li>
+                }
 
 
             </div>
@@ -229,6 +239,7 @@
     <script src="~/js/main.js"></script>
     <script src="~/js/energy.js"></script>
     <script src="~/js/register.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
 
 </html>
