@@ -39,6 +39,7 @@ builder.Services.Configure<IdentityOptions>(options =>
 builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
 
 builder.Services.AddScoped<IEmailService, EmailService>();
+builder.Services.AddScoped<ISliderService, SliderService>();
 
 var app = builder.Build();
 
